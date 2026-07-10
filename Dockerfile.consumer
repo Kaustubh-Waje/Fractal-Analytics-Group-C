@@ -1,0 +1,11 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY kafka_consumer.py .
+COPY postgresql-42.7.3.jar .
+
+CMD ["python", "kafka_consumer.py"]

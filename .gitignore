@@ -1,0 +1,32 @@
+# Python virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Spark temporary files
+metastore_db/
+spark-warehouse/
+
+# Log files
+*.log
+
+# Docker files
+*.pid
+
+# Kafka downloaded files
+kafka_2.13-3.9.2/
+
+# PySpark temporary directories
+tmp/
